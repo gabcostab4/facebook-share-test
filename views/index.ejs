@@ -26,7 +26,6 @@
     <title>Facebook Share</title>
   </head>
   <body>
-    <button onclick="share();">Share</button>
     <script>
       window.fbAsyncInit = function () {
         FB.init({
@@ -53,6 +52,9 @@
           function (response) {}
         );
       }
+    </script>
+    <script>
+      window.onload = share()
     </script>
   </body>
 </html>
