@@ -34,16 +34,7 @@
           xfbml: true,
           version: "v7.0",
         });
-      };
-    </script>
-    <script
-      async
-      defer
-      src="https://connect.facebook.net/en_US/sdk.js"
-    ></script>
-    a
-    <script>
-      function share() {
+
         FB.ui(
           {
             method: "share",
@@ -51,10 +42,12 @@
           },
           function (response) {}
         );
-      }
+      };
     </script>
-    <script>
-      window.onload = share()
-    </script>
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
   </body>
 </html>
